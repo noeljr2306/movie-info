@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap");
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Cal Sans", sans-serif;
+  background: #030014;
+}
+h1 {
+  @apply mx-auto max-w-4xl text-center text-5xl font-bold leading-tight tracking-[-1%] text-white sm:text-[64px] sm:leading-[76px];
+}
+h2 {
+  @apply text-2xl font-bold text-white sm:text-3xl;
+}
+.gradient-text {
+  @apply bg-linear-to-r from-[#551af5] to-[#c3b4e8] bg-clip-text text-transparent;
+}
+.search {
+  @apply w-full bg-blue-950/30 px-4 py-3 rounded-lg mt-10 max-w-3xl mx-auto;
+}
+input {
+  @apply w-full bg-transparent py-2 sm:pr-10 pl-10 text-base text-gray-200 placeholder-blue-950/60 outline-hidden;
+}
+.search-icon {
+  @apply absolute mt-2 text-blue-950/40 h-5 w-5;
+}
