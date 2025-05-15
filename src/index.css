@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import "tailwindcss";
 
 body {
@@ -16,12 +17,105 @@ h2 {
 .gradient-text {
   @apply bg-linear-to-r from-[#551af5] to-[#c3b4e8] bg-clip-text text-transparent;
 }
-.search {
-  @apply w-full bg-blue-950/30 px-4 py-3 rounded-lg mt-10 max-w-3xl mx-auto;
-}
-input {
-  @apply w-full bg-transparent py-2 sm:pr-10 pl-10 text-base text-gray-200 placeholder-blue-950/60 outline-hidden;
-}
+
 .search-icon {
-  @apply absolute mt-2 text-blue-950/40 h-5 w-5;
+  @apply absolute text-zinc-400 h-5 w-5;
+}
+header img {
+  @apply w-full max-w-lg h-auto object-contain mx-auto drop-shadow-md;
+}
+
+@layer components {
+  .wrapper {
+    @apply px-5 py-12 max-w-7xl mx-auto flex flex-col relative z-10;
+  }
+  .search {
+    @apply w-full bg-blue-950/30 px-4 py-3 rounded-lg mt-10 max-w-3xl mx-auto;
+
+    & input {
+      @apply w-full bg-transparent py-2 sm:pr-10 pl-10 text-base text-gray-200 placeholder-zinc-400 outline-hidden;
+    }
+    & div {
+      @apply relative flex items-center;
+    }
+  }
+  .all-movies {
+    @apply space-y-9;
+
+    & ul {
+      @apply grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4;
+    }
+  }
+  .movie-card {
+    @apply bg-blue-950/30 p-5 rounded-2xl shadow-inner shadow-blue-900/40;
+
+    & img {
+      @apply rounded-lg h-auto w-full;
+    }
+
+    & h3 {
+      @apply text-white font-bold text-base line-clamp-1;
+    }
+
+    & .content {
+      @apply mt-2 flex flex-row items-center flex-wrap gap-2;
+    }
+
+    & .rating {
+      @apply flex flex-row items-center gap-1;
+    }
+
+    & .rating img {
+      @apply size-4 object-contain;
+    }
+
+    & .rating p {
+      @apply font-bold text-base text-white;
+    }
+
+    & .content span {
+      @apply text-sm text-gray-100;
+    }
+
+    & .content .lang {
+      @apply capitalize text-gray-100 font-medium text-base;
+    }
+
+    & .content .year {
+      @apply text-gray-100 font-medium text-base;
+    }
+  }
+  .trending {
+    @apply mt-4;
+
+    & ul {
+      @apply flex flex-row overflow-y-auto gap-5 -mt-10 w-full hide-scrollbar;
+    }
+
+    & ul li {
+      @apply min-w-[230px] flex flex-row items-center;
+    }
+
+    & ul li p {
+      @apply trend-font mt-[22px] text-nowrap;
+    }
+
+    & ul li img {
+      @apply w-[127px] h-[163px] rounded-lg object-cover -ml-3.5;
+    }
+  }
+}
+@utility trend-font {
+  -webkit-text-stroke: 5px rgba(206, 206, 251, 0.5);
+  font-size: 190px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+@utility hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
