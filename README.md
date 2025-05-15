@@ -103,5 +103,5 @@ Enjoy your Movie Info Website!
 
 Here’s how the Movie Info Website looks like:
 
-![Movie Info Website Screenshot](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_-8yJ4tPnT5cvGX6zTdkNUweF18yGbKMYfoQzNN64qzDXoHiduOIyzGmZ1iuwj9ozGRb4aWWmuD_LyAxpmuriT3a9_WbG9YgqhOa27aiVnGDIxWSlywlBMlIuSuPxFRlXvtaHSmBXPZgXqSPVqoi0JfDB6KdB6vC7hhF_C1cG-GpQWqaB5p0xmc2aeJgH/s320/Vite%20+%20React%20-%20Google%20Chrome%2015_05_2025%2010_15_11%20pm.png)
+![Movie Info Website Screenshot](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_-8yJ4tPnT5cvGX6zTdkNUweF18yGbKMYfoQzNN64qzDXoHiduOIyzGmZ1iuwj9ozGRb4aWWmuD_LyAxpmuriT3a9_WbG9YgqhOa27aiVnGDIxWSlywlBMlIuSuPxFRlXvtaHSmBXPZgXqSPVqoi0JfDB6KdB6vC7hhF_C1cG-GpQWqaB5p0xmc2aeJgH/w629-h364/Vite%20+%20React%20-%20Google%20Chrome%2015_05_2025%2010_15_11%20pm.png)
 
