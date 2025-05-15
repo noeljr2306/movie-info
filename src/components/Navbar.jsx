@@ -8,7 +8,12 @@ const Navbar = () => {
         <p className="text-2xl">MoviePulse</p>
       </div>
       <div>
-        <button className="bg-white flex p-2 border rounded-md border-none active:scale-96 transition-all cursor-pointer">
+        <button
+          className="bg-white flex p-2 border rounded-md border-none active:scale-96 transition-all cursor-pointer"
+          onClick={() => {
+            window.open("https://github.com/noeljr2306", "_blank");
+          }}
+        >
           <Github />
           Github
         </button>
