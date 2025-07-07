@@ -47,8 +47,8 @@ This project uses the following technologies:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/movie-info-app.git
-cd movie-info-app
+git clone https://github.com/noeljr2306/movie-info.git
+cd movie-info
 ```
 
 ### Step 2: Install Dependencies
